@@ -1,0 +1,26 @@
+- trigger: sexytext
+  description: Used for adding css styles for better looking text
+  scope: css
+  mTime: 1475334245942
+  text: |
+        -webkit-font-smoothing: antialiased;\r
+        text-rendering: optimizeLegibility;
+
+- trigger: col
+  scope: html
+  description: Adds Bootstrap column to html document
+  mTime: 1475335180438
+  text: |
+        <div class="col-${1:size}-${2:#}">
+            ${3:content}
+        </div><!-- end col -->
+
+- description: Add a div with class of row to HTML
+  scope: html
+  trigger: row
+  mTime: 1475335348829
+  text: |
+        <div class="row ${1:addl classes}">
+            ${2:content}
+        </div> <!-- row -->
+
